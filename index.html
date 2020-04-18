@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+
+
+</head>
+
+<body>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div id="gameStart" >
+                <h1>HAPPY EGGS</h1>
+                <button id="play">Play</button>
+            </div>
+        </div>
+            <!-- Start Game Over popup-->
+        <div class="col-md-6 ">
+            <div id="gameOver" class="d-none">
+                <h1>Game Over</h1>
+                <h2 id="gameOverScore"></h2>
+                <button id="playAgain">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <!-- Start Game Start popup-->
+        <div id="containerDiv" class="h-100 overflow-hidden">
+                <!-- Start -->
+        <div class="col-sm-10 m-auto">
+            <div id="game-statusBar" class="Score-life  d-flex justify-content-between align-content-between">
+                <div class="font-weight-bolder">
+                    Score :
+                    <span id="Score"> 0 </span>
+                </div>
+                <div class="font-weight-bolder">
+                    Life :
+                    <span id="Life"> 10 </span>
+                </div>
+            </div>
+        </div>
+        <div class=" col-sm-8 m-auto h-100">
+            <div class="hens">
+                <div id="hen1" class="hen">
+                    <img src="images/bloodsong-Chicken-RoundCartoon.svg" class="" alt="">
+                </div>
+                <div id="hen2" class="hen">
+                    <img src="images/bloodsong-Chicken-RoundCartoon.svg" class=""" alt="">
+                </div>
+                <div id="hen3" class="hen">
+                    <img src="images/bloodsong-Chicken-RoundCartoon.svg" class=""" alt="">
+                </div>
+            </div>
+            <div class="eggs">
+                <div id="egg1" class="egg" data-crackedEgg='1'>
+                    <img src="images/misc-chicken-egg.svg" class="w-100" alt="">
+                </div>
+                <div id="egg2" class="egg" data-crackedEgg='2'>
+                    <img src="images/misc-chicken-egg.svg" class="w-100" alt="">
+                </div>
+                <div id="egg3" class="egg" data-crackedEgg='3'>
+                    <img src="images/misc-chicken-egg.svg" class="w-100" alt="">
+                </div>
+            <div class="crackedEggs">
+                <div id="crackedEgg1" class="crackedEgg d-none">
+                    <img src="images/Chick_007_Newborn_Egg_Cartoon.svg" class="w-100" alt="">
+                </div>
+                <div id="crackedEgg2" class="crackedEgg d-none">
+                    <img src="images/Chick_007_Newborn_Egg_Cartoon.svg" class="w-100"  alt="">
+                </div>
+                <div id="crackedEgg3" class="crackedEgg d-none">
+                    <img src="images/Chick_007_Newborn_Egg_Cartoon.svg" class="w-100"  alt="">
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div id="basketDiv">
+        <img id="basket" src="images/Basket.svg" alt="" class="w-100" >
+        <span id="basketScore"></span>
+    </div>
+    </div>
+    
+    
+
+    <div id="floor" class="floor"></div>
+    
+    
+    
+    <audio src="sound/chicken_alarm.mp3" id="startAudio" loop="loop"></audio>
+    <audio src="sound/chicken_kk.mp3" id="brokenEggAudio"></audio>
+    <audio src="sound/game_over.mp3" id="gameOverAudio"></audio>
+    <audio src="sound/score.mp3" id="ScoreAudio"></audio>
+
+
+
+    <script src="js/first.js"></script>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
