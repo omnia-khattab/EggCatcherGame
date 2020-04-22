@@ -135,7 +135,7 @@ function checkEggHitsTheBasket(egg) {
             scoreInp.innerHTML = score;
             basketScore.innerHTML = score;
             ScoreAudio.play();
-            if (speed % 5 == 0 && speed < maxSpeed) {
+            if (score % 10 == 0 && speed < maxSpeed) {
                 speed++;
             }
             return true;
